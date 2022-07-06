@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root{
+    --orange: hsl(25, 97%,53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grey: hsl(217, 12%, 63%);
+    --Medium-grey: hsl(216, 12%, 54%);
+    --Dark-blue: hsl(213, 19%, 18%);
+    --Very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: hsl(216, 12%, 54%);
+    color: #fff;
+    font-family: cursive;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card {
+    width: 350px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 20px;
+}
+.card-header img{
+    color: hsl(217, 12%, 63%);
+    background: hsl(212, 17%, 20%);
+    border-radius: 50%;
+    padding: 15px;
+}
+.card-body { 
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-container button {
+    padding: 15px;
+    height: 40px;
+    background: hsl(212, 17%, 20%);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    margin: 5px;
+    color: hsl(217, 12%, 63%);
+}
+/*hover state*/
+.btn-container button:hover {
+    background-color: hsl(217, 12%, 63%);
+    color:#fff
+}
+
+/*active state*/ 
+.btn-container button:active {
+    background-color: hsl(25, 97%, 53%);
+    color:#fff
+}
+
+.btn-container {
+    margin-bottom: 20px;
+}
+.card-container{
+    padding: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: hsl(25, 97%,53%);
+    color: #fff;
+    border-radius: 20px;
+}
+.submit-btn:hover{
+    background: #fff;
+    color: hsl(25, 97%,53%);
+}
+
+.card-2 { 
+    display: none;
+    width: 350px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 20px;
+}
+.card-2{
+    text-align: center;
+}
+.card-2 .card-body p:nth-child(1){
+    color: hsl(25, 97%, 53%);
+}
