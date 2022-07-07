@@ -35,41 +35,82 @@ body {
     padding: 15px;
 }
 .card-body { 
-    
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.btn-container button {
+/*.btn-container li {
     padding: 15px;
-    height: 40px;
     background: hsl(212, 17%, 20%);
     border: none;
     outline: none;
     border-radius: 50%;
     margin: 5px;
     color: hsl(217, 12%, 63%);
-}
+} */
 /*hover state*/
-.btn-container button:hover {
+/*.btn-container li:hover {
     background-color: hsl(217, 12%, 63%);
     color:#fff
-}
+}*/
 
 /*active state*/ 
-.btn-container button:active {
+/*.btn-container li:active {
     background-color: hsl(25, 97%, 53%);
     color:#fff
 }
 
 .btn-container {
     margin-bottom: 20px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    border: 1px solid white;
+}*/
+
+.btn-container {
+    margin-bottom: 40px;
+    padding:0;
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+ }
+
+.btn-container input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+
+.btn-container label {
+    background-color: hsl(212, 17%, 20%);;
+    padding: 10px 15px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+  }
+
+.btn-container label:hover {
+    background-color: hsl(217, 12%, 63%);
+    color:#fff
+  }
+
+  /*.btn-container input[type="radio"]: focus+ label {
+    border: 2px dashed #444;
+  }*/
+
+.btn-container input[type="radio"]:checked + label {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
 }
+
 .card-container{
     padding: 10px;
 }
 
-.submit-btn {
+#submit-btn {
     width: 100%;
     padding: 10px 20px;
     border: none;
@@ -78,21 +119,20 @@ body {
     color: #fff;
     border-radius: 20px;
 }
-.submit-btn:hover{
+#submit-btn:hover{
     background: #fff;
     color: hsl(25, 97%,53%);
 }
 
-.card-2 { 
+#card-2 { 
     display: none;
     width: 350px;
     background-color: hsl(213, 19%, 18%);
     padding: 20px;
     border-radius: 20px;
-}
-.card-2{
     text-align: center;
 }
-.card-2 .card-body p:nth-child(1){
+
+#card-2 .card-body p:nth-child(1){
     color: hsl(25, 97%, 53%);
 }
